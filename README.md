@@ -76,7 +76,87 @@
 - I don't take any responsibility for what you do with this program. 
 - Bugs can occur!
 
+#### Requirements
+- ESP8266 Module
+- ESP8266 Core library, must be version 2.0.0!
+- ESP8266 Patch library
+- ESP8266 Driver
+    - Windows Users
 
+        |CP210x|CH34x|
+        |:---:|:---:|
+        |[Download](Tools/drivers/CP210x.zip)|[Download](Tools/drivers/CH34x.zip)|
+    - MacOS Users
+        
+        For the MacOS you can install driver using `brew`
+        ```
+        brew tap caskroom/drivers
+        brew cask install silicon-labs-vcp-driver
+        ```
+
+ESP8266 board variants:
+
+|CP210x|CH34x|
+|:---:|:---:|
+|<img src="Tools/assets/boards/CP210x-board.png" height="200px">|<img src="Tools/assets/boards/CH34x-board.png" height="200px">|
+
+### Using NodeMCU Flasher
+1. [Download](https://github.com/nodemcu/nodemcu-flasher/raw/master/Win64/Release/ESP8266Flasher.exe) **NodeMCU Flasher**
+2. [Download](https://github.com/HerwonoWr/CatchME/releases) the current firmware release (binary version)
+3. Upload the firmware `.bin` file using **NodeMCU Flasher**
+4. Connect your ESP8266 (making sure the correct drivers are installed) and open up the **NodeMCU Flasher**
+5. Go to the `Advanced` tab and select the correct values for your board
+6. Navigate to the `config` tab and click the gear icon for the first entry
+7. Browse for the `.bin` file you just downloaded and click open
+8. Switch back to the `Operation` tab and click <kbd>Flash(F)</kbd>
+
+*Note: This guide is for Windows users*
+
+### Using Arduino IDE
+1. [Download](https://www.arduino.cc/en/Main/Software) and install **Arduino IDE**
+2. [Download](https://github.com/HerwonoWr/CatchME/releases) the current firmware release (source version)
+3. MacOS Users
+    - Go to `Arduino` > `Preferences`
+    - Add `http://arduino.esp8266.com/stable/package_esp8266com_index.json` to the **Additional Boards Manager URLs**
+4. Windows Users
+    - Go to `File` > `Preferences`
+    - Add `http://arduino.esp8266.com/stable/package_esp8266com_index.json` to the **Additional Boards Manager URLs**
+5. Go to `Tools` > `Board` > `Boards Manager`
+6. Type in `esp8266`
+7. Select version `2.0.0` and click on `Install` (**must be version 2.0.0!**)
+![Arduino IDE - Boards Manager](Tools/assets/arduino-ide/boards-manager.png)
+8. Patching ESP8266 v2.0.0 Core
+    - Check your ESP8266 packages location
+        - MacOS Users
+            - Go to `Arduino` > `Preferences`
+
+                Find your packages path location under text `More preferences can be edited directly in the file`
+        - Windows Users
+            - Go to `File` > `Preferences`
+
+                Find your packages path location under text `More preferences can be edited directly in the file`
+9. Copy patch files in the **esp8266-Patch** folder to the following locations
+
+    |Patch File|Path Location|Folder|
+    |---|---|:---:|
+    |user_interface.h|[packages-location]`/packages/esp8266/hardware/esp8266/2.0.0/tools/sdk/include`|`include`|
+    |ESP8266WiFi.cpp<br>ESP8266WiFi.h|[packages-location]`/packages/esp8266/hardware/esp8266/2.0.0/libraries/ESP8266WiFi/src`|`src`|
+    |ESP8266HTTPUpdateServer.cpp|[packages-location]`/packages/esp8266/hardware/esp8266/2.0.0/libraries/ESP8266HTTPUpdateServer/src`|`src`|
+10. Go to `CatchME` folder, and open `CatchME.ino` file in **Arduino IDE**
+11. Select your ESP8266 board module *(this guide using NodeMCU 1.0 (ESP12-E Module))* and the right port
+    - Go to `Tools` > `Board`, select the right board module
+    - Go to `Tools` > `Port`, select the right port
+12. Depending on your ESP8266 board, you may have to adjust the board configurations
+    - Here is an example board configuration for *NodeMCU 1.0 (ESP12-E Module)*
+
+        |Conf|Value|
+        |---|---|
+        |CPU Frequency|80Mhz|
+        |Flash Size| 4M (3M SPIFFS)|
+        |Upload Speed|115200|
+13. Click <kbd>Upload</kbd>
+
+   
 ## License
 ```
 MIT License
