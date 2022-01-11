@@ -1,6 +1,6 @@
-# World_of_Walkers
+## World_of_Walkers 
 
-ESP8266 ATTACK PHISHING 
+``ESP8266 ATTACK PHISHING ``
 
 # NodeMcu ESP8266 Fake sign in
 
@@ -18,7 +18,7 @@ ESP8266 ATTACK PHISHING
 
 <table>
  <tr>
-    <th>connect to Free Wifi</th>
+    <th>connect to Free internet</th>
     <th>redirect ➜ 172.0.0.1/</th> 
  </tr>
    
@@ -67,9 +67,6 @@ ESP8266 ATTACK PHISHING
 5. You can optionally change some parameters like the SSID name and texts of the page like title, subtitle, text body...
 6. Upload the code into your board.
 7. You are done!
-
-## Credits
-This is an integrated project of Original Author [@125K](https://github.com/125K)
 
 
 ## Disclaimer
