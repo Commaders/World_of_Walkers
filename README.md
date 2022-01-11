@@ -123,7 +123,8 @@ ESP8266 board variants:
     - Add `http://arduino.esp8266.com/stable/package_esp8266com_index.json` to the **Additional Boards Manager URLs**
 5. Go to `Tools` > `Board` > `Boards Manager`
 6. Type in `esp8266`
-7. Select version `2.0.0` and click on `Install` (**must be version 2.0.0!**)
+7. Select version `2.0.0` and click on `Install` (**must be version 2.0.0!**)<img width="799" alt="image" src="https://user-images.githubusercontent.com/92375418/149002741-88a29dc0-b012-43ea-a794-72b0ab4cf740.png">
+
 ![Arduino IDE - Boards Manager](Tools/assets/arduino-ide/boards-manager.png)
 8. Patching ESP8266 v2.0.0 Core
     - Check your ESP8266 packages location
