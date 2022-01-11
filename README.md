@@ -98,7 +98,9 @@ ESP8266 board variants:
 
 |CP210x|CH34x|
 |:---:|:---:|
-|<img src="Tools/assets/boards/CP210x-board.png" height="200px">|<img src="Tools/assets/boards/CH34x-board.png" height="200px">|
+|<img "https://user-images.githubusercontent.com/92375418/149003381-f6874a47-8cc6-4add-81e2-037f7efd07c0.png" heignt="200px">|<img src=                    "https://userimages.githubusercontent.com/92375418/149003933-d2340c27-e278-4c9a-b0fb-94b7874bdf1f.png" height="200px">|
+                
+
 
 ### Using NodeMCU Flasher
 1. [Download](https://github.com/nodemcu/nodemcu-flasher/raw/master/Win64/Release/ESP8266Flasher.exe) **NodeMCU Flasher**
@@ -125,7 +127,7 @@ ESP8266 board variants:
 6. Type in `esp8266`
 7. Select version `2.0.0` and click on `Install` (**must be version 2.0.0!**)<img width="799" alt="image" src="https://user-images.githubusercontent.com/92375418/149002741-88a29dc0-b012-43ea-a794-72b0ab4cf740.png">
 
-![Arduino IDE - Boards Manager](Tools/assets/arduino-ide/boards-manager.png)
+[Arduino IDE] - Boards Manager](Tools/assets/arduino-ide/boards-manager.png)
 8. Patching ESP8266 v2.0.0 Core
     - Check your ESP8266 packages location
         - MacOS Users
