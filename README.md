@@ -14,7 +14,7 @@
 ```
 <b>Note: If you want to see the stored credetials go to <a>"**http**://</a>yourcurrentwebsite.com<a>/creds</a>" or "**172.0.0.1**<a>/creds</a>"
 
-# Screenshots
+## Screenshots
 
 <table>
  <tr>
@@ -39,7 +39,7 @@
 </table>
 
 
-# Installation (ESP8266 Flasher - Easy way)
+### Installation (ESP8266 Flasher - Easy way)
 
 1. Download <a href="https://github.com/nodemcu/nodemcu-flasher"><b>ESP8266 Flasher</b></a>.
 
@@ -57,7 +57,7 @@
 
 6. Your Node MCU is ready!
 
-# Installation (Arduino IDE)
+## Installation (Arduino IDE)
 
 1. Open your <a href="https://www.arduino.cc/en/main/software">Arduino IDE</a> and go to "File -> Preferences -> Boards Manager URLs" and paste the following link:
 ``http://arduino.esp8266.com/stable/package_esp8266com_index.json``
