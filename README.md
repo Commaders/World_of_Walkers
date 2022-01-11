@@ -98,8 +98,7 @@ ESP8266 board variants:
 
 |CP210x|CH34x|
 |:---:|:---:|
-|<img "https://user-images.githubusercontent.com/92375418/149003381-f6874a47-8cc6-4add-81e2-037f7efd07c0.png" heignt="200px">|<img src=                    "https://userimages.githubusercontent.com/92375418/149003933-d2340c27-e278-4c9a-b0fb-94b7874bdf1f.png" height="200px">|
-                
+|<img src="Tools/assets/boards/CP210x-board.png" height="200px">|<img src="Tools/assets/boards/CH34x-board.png" height="200px">|             
 
 
 ### Using NodeMCU Flasher
