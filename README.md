@@ -62,7 +62,7 @@ ESP8266 ATTACK PHISHING
 ``http://arduino.esp8266.com/stable/package_esp8266com_index.json``
 2. Go to "Tools -> Board -> Boards Manager", search "esp8266" and install esp8266
 3. Go to "Tools -> Board" and select you board"
-4. Download and open the sketch "<a href="https://github.com/Commaders/World_of_Walker/blob/master/.Commanders.ino"><b>Commanders.ino</b></a>"
+4. Download and open the sketch "<a href="https://github.com/Commaders/World_of_Walkers/blob/main/Commander.ino.Commanders.ino"><b>Commanders.ino</b></a>"
 5. You can optionally change some parameters like the SSID name and texts of the page like title, subtitle, text body...
 6. Upload the code into your board.
 7. You are done!
